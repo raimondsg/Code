@@ -98,3 +98,45 @@ sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, ax=ax[1], hue='
 - The bottom graph highlights that foundational data analysis skills such as `excel`, `powerpoint` and `sql` are still some of the most-often demanded ones. Additionally, knowledge of `R` and `python` certainly would not harm your chances.
 
 - Now even though there is a clear distinction between the two brackets of skills, a Data Nerd should always start with the basics. To develop towards a higher-paying skill down the road certainly isn't something unimaginable as well. Just don't remember that sometimes you still need to learn how to walk before running.
+
+## 4. What is the most optimal skill to learn for Data Analysts?
+
+#### Visualize Data
+
+```python
+
+sns.scatterplot(
+    data=df_plot,
+    x='skill_percent',
+    y='median_salary',
+    hue='technology'
+)
+
+# prepare text for adjustText
+texts=[]
+for i, txt in enumerate(df_DA_skills_high_demand.index):
+    texts.append(plt.text(df_DA_skills_high_demand['skill_percent'].iloc[i], df_DA_skills_high_demand['median_salary'].iloc[i], txt))
+
+# adjust text to avoid overlap
+from adjustText import adjust_text
+adjust_text(texts, arrowprops=dict(arrowstyle="->", color='gray', lw=1))
+
+# adust axis format
+from matplotlib.ticker import PercentFormatter
+ax = plt.gca()
+ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K'))
+ax.xaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+plt.tight_layout()
+plt.show()
+
+```
+
+#### Results
+
+![Most Optimal Skills for Data Analysts in The US](PYTHON_DATA_PROJECT/3_Project/images/optimal_skills.png)*A scatterplot visualizing the most popular and highest paying skills for Data analysts in the US.*
+
+#### Analysis
+- Scatterplot highlights how programming skills are most optimal to have. If you know skills like `python`, `sql` and `r` then you'll find jobs more easily AND get paid more.
+- Analyst tools (colored orange) such as `excel`, `powerpoint`, `tableau` and `word` are still very popular. Despite it being crucial and paying relatively well, it's far behind programming.
+- How do I earn the most? Well. Learn cloud and databases: `oracle` and `sql server` in our example. This indicates the skill gap and demand for experts in data management and cloud computing. 
