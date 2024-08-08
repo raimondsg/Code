@@ -188,11 +188,13 @@ plt.show()
 - How do I earn the most? Well. Learn cloud and databases: `oracle` and `sql server` in our example. This indicates the skill gap and demand for experts in data management and cloud computing. 
 
 # What I Learned
-Throughout this project, I deepened my understanding of the data analyst job market and enhanced my technical skills in Python, especially in data manipulation and visualization. Here are a few specific things I learned:
+I came in with little to no understanding about python, I just knew it's used in data analytics. In a nutshell, now I see that unlike R it can be used for a lot more (than just data manipulation and statistics) and make both analysis quickly, and create beautiful visualizations. But here's what I learned:
 
-Advanced Python Usage: Utilizing libraries such as Pandas for data manipulation, Seaborn and Matplotlib for data visualization, and other libraries helped me perform complex data analysis tasks more efficiently.
-Data Cleaning Importance: I learned that thorough data cleaning and preparation are crucial before any analysis can be conducted, ensuring the accuracy of insights derived from the data.
-Strategic Skill Analysis: The project emphasized the importance of aligning one's skills with market demand. Understanding the relationship between skill demand, salary, and job availability allows for more strategic career planning in the tech industry.
+Advanced Python Usage: Libraries are KEY. Yes, if you need to know how to use them, but man they make your life easy and help with better visualizations. Pandas are for data, Matplotlib and Seaborn are for visualization and graphing.
+
+Data Cleaning Importance: Nothing new perhaps, but I got to see firsthand how effort into data cleaning pays dividends later.
+
+Strategic Skill Analysis: I learned how US job market is an interesting example of what happens throughout the world. Programming is more efficient and it pays. Additionally you get paid more if you do a great job, and less so if you just change the job (eg Data Analyst vs Data Scientist).
 # Insights
 This project provided several general insights into the data job market for analysts:
 
